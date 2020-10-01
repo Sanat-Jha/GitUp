@@ -2,16 +2,13 @@ print("         Type a Quadratic Formula (ax^2+bx+c)")
 print("                  =====================================")
 print("                          But first we Have to do it the hard way")
 print("  " + "Do you Agree?")
-ans = "yes"
-answer = input()
-if answer == ans :
+
+if input() == "yes" :
    print("Ok ,cool")
 else :
    print("alas!!") 
    exit()
-for i in ["========","=========","========"]:
-    print(i)
-   
+print("========\n========\n========")
 print("............let's go ...............")
 print("type the (-a- of ax ) number:")
 a = float(input())
@@ -30,9 +27,7 @@ else :
    op3= (-1*b + op1**(1/2))/2*a
    print("Delta is < 0  it has no Solutions in the Real numbers")
    print("Do you want Solution on Complex Numbers ?")
-answer = input()
-an = "yes"
-if answer == an :
+if input() == "yes" :
    print("First solution is : " + str(op2))
    print("Second solution is : " + str(op3))
 else : 
